@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../assets/FlowIcon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.76a95c52.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -1822,9 +1822,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overriding-node-port-locations-to-customize-link-display" class="md-nav__link">
+  <a href="#customize-link-display" class="md-nav__link">
     <span class="md-ellipsis">
-      Overriding node port locations to customize link display
+      Customize link display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overriding-node-port-locations-to-customize-link-drawing-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overriding node port locations to customize link drawing direction
     </span>
   </a>
   
@@ -2572,9 +2581,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overriding-node-port-locations-to-customize-link-display" class="md-nav__link">
+  <a href="#customize-link-display" class="md-nav__link">
     <span class="md-ellipsis">
-      Overriding node port locations to customize link display
+      Customize link display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overriding-node-port-locations-to-customize-link-drawing-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overriding node port locations to customize link drawing direction
     </span>
   </a>
   
@@ -2669,8 +2687,14 @@
 <li>Setting the <a href="../03.02.01-canvas-config/#links">link fields</a> in  the canvas configuration.</li>
 <li>Customizing comment appearance with CSS (see below).</li>
 </ul>
-<h2 id="overriding-node-port-locations-to-customize-link-display">Overriding node port locations to customize link display<a class="headerlink" href="#overriding-node-port-locations-to-customize-link-display" title="Permanent link">&para;</a></h2>
-<p>The positions of ports on nodes affect the direction that links are drawn to/fom the ports. See this <a href="../03.06.01-node-customization/#overriding-port-positions-and-link-directions">overriding port positions</a> section in the node customization page for more details.</p>
+<h2 id="customize-link-display">Customize link display<a class="headerlink" href="#customize-link-display" title="Permanent link">&para;</a></h2>
+<p>The two major config fields to customize link display are:</p>
+<ul>
+<li><a href="../03.02.01-canvas-config/#enablelinktype">enableLinkType</a> that can be set to &ldquo;Curve&rdquo;, &ldquo;Elbow&rdquo;, &ldquo;Parallax&rdquo; or &ldquo;Straight&rdquo;</li>
+<li><a href="../03.02.01-canvas-config/#enablelinkmethod">enableLinkMethod</a> that can be set to &ldquo;Ports&rdquo; or &ldquo;Freeform&rdquo;.</li>
+</ul>
+<h2 id="overriding-node-port-locations-to-customize-link-drawing-direction">Overriding node port locations to customize link drawing direction<a class="headerlink" href="#overriding-node-port-locations-to-customize-link-drawing-direction" title="Permanent link">&para;</a></h2>
+<p>When <a href="../03.02.01-canvas-config/#enablelinkmethod">enableLinkMethod</a> is set to &ldquo;Ports&rdquo;, the positions of ports on nodes affect the direction that links are drawn to/fom the ports. See this <a href="../03.06.01-node-customization/#overriding-port-positions-and-link-directions">overriding port positions</a> section in the node customization page for more details.</p>
 <h2 id="customizing-comment-appearance-with-css">Customizing comment appearance with CSS<a class="headerlink" href="#customizing-comment-appearance-with-css" title="Permanent link">&para;</a></h2>
 <h3 id="link-dom-construction">Link DOM Construction<a class="headerlink" href="#link-dom-construction" title="Permanent link">&para;</a></h3>
 <p>Links are drawn on the canvas using SVG elements in the DOM. Each link has a top level group <code>&lt;g&gt;</code> element and inside it some SVG paths. The first displayed path is the selection area. This is invisible but provides a selection/hover area for mouse interactions on the link. The second is a path to represent the link itself which is drawn over the top of the selection area path:</p>
@@ -2872,7 +2896,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.action.edit", "navigation.tabs", "navigation.indexes", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="../js/links-in-new-tabs.js"></script>
       
